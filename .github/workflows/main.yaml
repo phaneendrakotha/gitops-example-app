@@ -27,6 +27,6 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.EXAMPLE_GITOPS_DEPLOY_TRIGGER }}
-        repository: ianmiell/gitops-example-deploy
+        repository: phaneendrakotha/gitops-example-deploy
         event-type: gitops-example-app-trigger
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
